@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ace-Angular6-Demo';
+
+  text: string = "";
+  options: any = { maxLines: 1000, printMargin: false };
+
+  onChange(code) {
+    console.log("new code", code);
+  }
+
 }
